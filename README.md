@@ -1,7 +1,7 @@
 # HuertoHogar — Mi primera tienda web
 
 Evaluación Formativa N.° 1 — Desarrollo Fullstack 2 (DSY1104)
-Equipo: [Nombre 1] y [Nombre 2]
+Equipo: Fabian Palma y Juan Salas
 
 ## 1. Descripción del proyecto
 
@@ -32,7 +32,7 @@ Cuatro páginas HTML como mínimo, todas enlazadas entre sí y a la misma hoja d
 Reglas clave a no perder de vista (detalle completo en el PDF de alcance):
 - HTML semántico: `header`, `nav`, `main`, `section`, `article`, `footer` — no `div` genéricos.
 - Una sola hoja de estilos, en `assets/css/estilos.css` (no en la raíz, no estilos en línea).
-- Catálogo con **8 productos** (no 9 — el caso HuertoHogar trae 9, hay que dejar fuera 1).
+- Catálogo con **8 productos** 
 - Indicador `Cart (n)` visible y actualizado en las 4 páginas.
 - Validaciones de formulario en JS con mensaje de error específico junto a cada campo (no un aviso genérico), y sugerencia de formato bajo cada campo.
 - Sin pasarela de pago real: `Pagar` con carrito vacío muestra error; con ítems, confirma de forma simulada.
@@ -126,7 +126,7 @@ Todo el estado de la app vive en tres claves de `localStorage`. El catálogo de 
 
 Reparto por vista, para que cada uno controle su propio HTML/JS y toquen `estilos.css` en momentos distintos:
 
-**Juntos (día 1, antes de dividir):**
+**Día 1:**
 - `assets/css/estilos.css` — identidad visual base (paleta, tipografía, header/footer/botones comunes a las 4 vistas).
 - `assets/js/storage.js` y `assets/js/productos.js` — la estructura de datos de la sección 4, para que ambos programen contra el mismo contrato.
 
