@@ -1,1 +1,4 @@
-
+node_modules/
+server/huertohogar.db
+server/huertohogar.db-*
+server/.env
