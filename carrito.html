@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HuertoHogar - Carrito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">HuertoHogar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#catalogo">Productos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="carrito.html">Carrito</a></li>
+          </ul>
+          <ul class="navbar-nav align-items-md-center gap-md-3">
+            <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registrar usuario</a></li>
+            <li class="nav-item">
+              <a class="btn btn-success btn-sm" href="carrito.html">
+                <span id="contador-carrito">Cart (0)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="mb-4">Mi carrito de compras</h1>
+    <div class="row g-4">
+      <div class="col-md-8" id="lista-carrito"></div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="h5">Resumen</h2>
+            <p>Total: <strong id="total-carrito">$0</strong></p>
+
+            <div class="mb-3">
+              <label for="cupon" class="form-label">Cupón de descuento</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="cupon" placeholder="Código">
+                <button class="btn btn-outline-success" id="btn-cupon" type="button">Aplicar</button>
+              </div>
+              <div class="small mt-1" id="mensaje-cupon"></div>
+            </div>
+
+            <button class="btn btn-success w-100" id="btn-pagar" type="button">Pagar</button>
+            <div class="mt-2" id="mensaje-pago"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">HuertoHogar — Del campo a tu hogar</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/productos.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/carrito.js"></script>
+</body>
+</html>

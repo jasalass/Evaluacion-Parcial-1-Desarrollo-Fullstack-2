@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HuertoHogar - Iniciar sesión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">HuertoHogar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#catalogo">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+          </ul>
+          <ul class="navbar-nav align-items-md-center gap-md-3">
+            <li class="nav-item"><a class="nav-link active" href="login.html">Iniciar sesión</a></li>
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registrar usuario</a></li>
+            <li class="nav-item">
+              <a class="btn btn-success btn-sm" href="carrito.html">
+                <span id="contador-carrito">Cart (0)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <div class="row justify-content-center text-center mb-4">
+      <div class="col-md-4">
+        <img src="https://placehold.co/150x150/2e8b57/FFFFFF?text=HH" alt="Logotipo de HuertoHogar" class="img-fluid rounded-circle mb-3">
+        <h1 class="h4">HuertoHogar</h1>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header bg-success text-white">Inicio de sesión</div>
+          <div class="card-body">
+            <form id="formulario-login" novalidate>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="text-danger small error-campo" id="error-email"></div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="text-danger small error-campo" id="error-password"></div>
+              </div>
+              <button type="submit" class="btn btn-success w-100">Iniciar sesión</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">HuertoHogar — Del campo a tu hogar</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
