@@ -14,7 +14,7 @@ Documentos de referencia en `docs/`:
 - `DSY1104 Evaluación Formativa 1 - Estudiante.pdf` — pauta de evaluación (indicadores de logro y criterios).
 - `DSY1104 Evaluación Formativa 1 - Alcance Entrega (1).pdf` — alcance detallado, wireframes de las 4 vistas y reglas de validación.
 
-La ERS (Especificación de Requisitos de Software) forma parte de la entrega y debe completarse en `docs/` antes de implementar, tal como pide el enunciado.
+La ERS (Especificación de Requisitos de Software) forma parte de la entrega, en el formato oficial del Anexo 4 de la asignatura: [`docs/DSY1104 Evaluación Parcial 1 - Anexo 4 ERS-Especificacion de Requisitos del software - HuertoHogar.docx`](<docs/DSY1104 Evaluación Parcial 1 - Anexo 4 ERS-Especificacion de Requisitos del software - HuertoHogar.docx>), redactada según el estándar IEEE 830 y alineada con lo realmente implementado en las 4 vistas. También está disponible en Markdown para lectura rápida en [`docs/ERS-HuertoHogar.md`](docs/ERS-HuertoHogar.md).
 
 ---
 
